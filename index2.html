@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css"/>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="dist/css/bootstrap.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        header{
+           width: 100%;
+           background-color: coral;
+           padding: 8px;
+        }
+        div.gallery{
+                    border: 1px solid orange;
+                    float: left;
+                    width: 270px;
+                    margin: 10px;
+                    margin-left: 90px;
+                    margin-top: 150px;
+                }
+                div.gallery:hover{
+                    border: 1px solid green; 
+                }
+                div.gallery img{
+                    width: 100%;
+                    height: auto; 
+                }
+                div.gallery p{
+                    text-align: center; 
+                }
+                div.gallery button{
+                  
+                   width: 50px;
+                   margin: 5px; 
+                }
+                div.gallery #oyo{
+                  background-color: darkgreen;
+                }
+                div.gallery p{
+                   font-size: 20px;   
+                }
+       </style>
+</head>
+<body onload="getuesr()">
+  <header class="col-lg-13">
+    <i class="material-icons" style="float: left;margin-top:10px">restaurant</i><h2 style="margin-left: 50px">Food's Restaurant</h2>
+    <i class="fa fa-shopping-cart" style="float: right;margin-top:-30px;margin-right: 50px;font-size: 25px;"></i>
+   </header>
+    <div class="gallery">
+        <a target="_blank" href="/img/22.webp">
+          <img src="/img/22.webp" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <p>Humburger<br><br> Price 200</p>
+        <button onclick="button1()" id="oyo">-</button>
+        <span id="output-area"> </span>
+        <button onclick="button2()">+</button>
+       
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="/img/22.webp">
+          <img src="/img/23.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <p>Fries<br><br> Price 100</p>
+        <button onclick="button3()" id="oyo">-</button>
+        <span id="output-cy"></span>
+        <button onclick="button4()">+</button>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="/img/22.webp">
+          <img src="/img/24.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <p>Humburger<br><br> Price 50</p>
+        <button onclick="button5()" id="oyo">-</button>
+        <span id="output-cz"></span>
+        <button onclick="button6()">+</button>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="/img/22.webp">
+          <img src="/img/55.webp" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <p>Pepsi<br><br> Price 50</p>
+        <button onclick="button7()" id="oyo">-</button>
+        <span id="output-cv"></span>
+        <button onclick="button8()">+</button>
+      </div>
+      <button rowspan="3" style="margin-left: 50%;margin-top:50px"><a href="index3.html">Cheakout</a></button>
+</body>
+</html>
